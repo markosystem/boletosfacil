@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Application">
+        <class>br.com.boletos.model.User</class>
+        <class>br.com.boletos.model.Marking</class>
+        <class>br.com.boletos.model.Ticket</class>
+
+        <shared-cache-mode>NONE</shared-cache-mode>
+
+        <properties>
+            <!-- heroku web -->
+            <!--
+                        <property name="javax.persistence.jdbc.url"
+                                  value="jdbc:postgresql://ec2-54-243-239-66.compute-1.amazonaws.com:5432/dffttmel5d2p9"/>
+                        <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+                        <property name="javax.persistence.jdbc.user" value="uhhjnymyiunznb"/>
+                        <property name="javax.persistence.jdbc.password" value="1a9406b5757dfca3f0b4edcaa85fe5306b6ee73624a1033e2743102653a1cbc4"/>
+            -->
+            <!-- local -->
+
+            <property name="javax.persistence.jdbc.url"
+                      value="jdbc:postgresql://localhost:5432/boletos"/>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="postgres"/>
+            <property name="javax.persistence.jdbc.password" value="123456"/>
+
+            <!--<property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>-->
+            <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+        </properties>
+
+    </persistence-unit>
+</persistence>
