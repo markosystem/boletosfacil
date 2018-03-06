@@ -13,10 +13,10 @@
             <!-- heroku web -->
 
             <property name="javax.persistence.jdbc.url"
-                      value="jdbc:postgresql://ec2-23-23-177-166.compute-1.amazonaws.com:5432/dvb7p4hkgg4tq"/>
+                      value="jdbc:postgresql://ec2-54-225-249-161.compute-1.amazonaws.com:5432/d49ig2rq4tftsr"/>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-            <property name="javax.persistence.jdbc.user" value="clqeapbzgkyefq"/>
-            <property name="javax.persistence.jdbc.password" value="cf96d03a6cbd9289a8c14ac2577b02a4b713acf5eb49a98be338fdbc7dd22a44"/>
+            <property name="javax.persistence.jdbc.user" value="zhxtyiisogfjmd"/>
+            <property name="javax.persistence.jdbc.password" value="1d16df426b96e5ed1000acc916f80b1cf7ae26089672081a2133c67159476bf7"/>
 
             <!-- local -->
             <!--
