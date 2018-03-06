@@ -11,23 +11,23 @@
 
         <properties>
             <!-- heroku web -->
-            <!--
-                        <property name="javax.persistence.jdbc.url"
-                                  value="jdbc:postgresql://ec2-54-243-239-66.compute-1.amazonaws.com:5432/dffttmel5d2p9"/>
-                        <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-                        <property name="javax.persistence.jdbc.user" value="uhhjnymyiunznb"/>
-                        <property name="javax.persistence.jdbc.password" value="1a9406b5757dfca3f0b4edcaa85fe5306b6ee73624a1033e2743102653a1cbc4"/>
-            -->
-            <!-- local -->
 
             <property name="javax.persistence.jdbc.url"
-                      value="jdbc:postgresql://localhost:5432/boletos"/>
+                      value="jdbc:postgresql://ec2-23-23-177-166.compute-1.amazonaws.com:5432/dvb7p4hkgg4tq"/>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-            <property name="javax.persistence.jdbc.user" value="postgres"/>
-            <property name="javax.persistence.jdbc.password" value="123456"/>
+            <property name="javax.persistence.jdbc.user" value="clqeapbzgkyefq"/>
+            <property name="javax.persistence.jdbc.password" value="cf96d03a6cbd9289a8c14ac2577b02a4b713acf5eb49a98be338fdbc7dd22a44"/>
 
-            <!--<property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>-->
-            <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+            <!-- local -->
+            <!--
+                        <property name="javax.persistence.jdbc.url"
+                                  value="jdbc:postgresql://localhost:5432/boletos"/>
+                        <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+                        <property name="javax.persistence.jdbc.user" value="postgres"/>
+                        <property name="javax.persistence.jdbc.password" value="123456"/>
+            -->
+            <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+            <!--<property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>-->
         </properties>
 
     </persistence-unit>

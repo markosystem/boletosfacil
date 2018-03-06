@@ -39,16 +39,16 @@ Consumindo a API
 * /api/users (POST)
 ``` json
 {
-    "username": "fulano",
-    "password": 1234,
-    "email": "fulano@gmail.com"
+    "username" : "fulano",
+    "password" : 1234,
+    "email" : "fulano@gmail.com"
 }
 ```
 * /api/users/login (POST)
 ``` json
 {
-    "username": "fulano",
-    "password": 1234
+    "username" : "fulano",
+    "password" : 1234
 }
 ```
 
@@ -67,15 +67,15 @@ Consumindo a API
 * /api/markings (POST)
 ``` json
 {
-  "name": "Marcação Exemplo",
-  "situation": "Active"
+  "name" : "Marcação Exemplo",
+  "situation" : "Active"
 }
 ```
 * /api/markings/{id} (PUT)
 ``` json
 {
-  "name": "Transporte",
-  "situation": "Active"
+  "name" : "Transporte",
+  "situation" : "Active"
 }
 ```
 
@@ -94,22 +94,22 @@ Consumindo a API
 * /api/tickets (POST)
 ``` json
 {
-  "title": "BOLETO C DE TALZ EXEMPLO",
-  "barcode": 4534534534534334534534,
-  "dateDue": "2018-10-01",
-  "situation": "AwaitingPayment",
-  "marking":{
-    "id":5
+  "title" : "BOLETO C DE TALZ EXEMPLO",
+  "barcode" : 4534534534534334534534,
+  "dateDue" : "2018-10-01",
+  "situation" : "AwaitingPayment",
+  "marking" :{
+    "id" :5
   }
 }
 ```
 * /api/tickets/{id} (PUT)
 ``` json
 {
-  "title": "BOLETO TROCADO POR D",
-  "barcode": 4534534534534334534534,
-  "dateDue": "2018-01-02",
-  "situation": "AwaitingPayment"
+  "title" : "BOLETO TROCADO POR D",
+  "barcode" : 4534534534534334534534,
+  "dateDue" : "2018-01-02",
+  "situation" : "AwaitingPayment"
 }
 ```
 
